@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.site { min-height: 100vh; color: #242424; background: #fff; }
+.header { height: 62px; max-width: 1180px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; background: #fff; position: relative; z-index: 20; }
+.brand { color: #f77a22; text-decoration: none; font-size: 23px; font-weight: 800; letter-spacing: -1px; }
+.brand b { color: #ffb300; }
+.brandMark { display: inline-grid; place-items: center; width: 22px; height: 22px; border: 3px solid #ffb300; border-radius: 50%; font-size: 12px; }
+.nav { display: flex; align-items: center; gap: 10px; }
+.nav button { border: 0; background: transparent; }
+.searchButton { color: #4d4d4d; font-weight: 700; }
+.login { color: #f77a22 !important; border: 1px solid #ffe7c2 !important; border-radius: 7px; padding: 9px 13px; box-shadow: 0 4px 12px #f3a31a24; font-weight: 800; }
+.languageButton { display: flex; align-items: center; gap: 6px; text-transform: lowercase; }
+.languageButton .flag, .languageMenu .flag { font-size: 18px; line-height: 1; }
+.languageButton img, .languageMenu img { width: 20px; height: 14px; object-fit: cover; border-radius: 2px; }
+.chevron { color: #777; }
+.languageMenu { position: absolute; right: 92px; top: 50px; width: 130px; background: #fff; border: 1px solid #eee; border-radius: 8px; box-shadow: 0 10px 25px #0001; padding: 5px; }
+.languageMenu button { width: 100%; display: flex; gap: 8px; align-items: center; padding: 8px; text-transform: capitalize; }
+.languageMenu button:hover { background: #fff6ea; }
+.hero { min-height: 405px; background: #ffc927; display: grid; grid-template-columns: 58% 42%; align-items: center; padding: 25px max(24px, calc((100% - 1132px)/2)); overflow: hidden; }
+.heroContent { max-width: 560px; }
+.hero h1 { margin: 0 0 4px; color: #fff; font-size: clamp(42px, 5vw, 67px); line-height: 1.08; text-shadow: 0 2px 10px #d99f0022; }
+.heroContent > p { margin: 0 0 24px; color: #fff; font-size: 15px; }
+.orderCard { background: #fff; border-radius: 10px; box-shadow: 0 12px 30px #a06d0024; max-width: 520px; overflow: hidden; }
+.orderTabs { height: 54px; display: flex; gap: 4px; align-items: center; padding: 8px 12px; border-bottom: 1px solid #eee; }
+.orderTabs button { height: 38px; border: 0; border-radius: 7px; padding: 0 14px; color: #777; background: transparent; }
+.orderTabs .activeTab { color: #f77a22; background: #fff4ed; }
+.addressRow { display: grid; grid-template-columns: 1fr 125px; gap: 10px; padding: 12px; }
+.addressRow label { height: 43px; display: flex; align-items: center; gap: 8px; background: #f5f5f5; border-radius: 6px; padding: 0 12px; }
+.addressRow input { width: 100%; border: 0; outline: 0; background: transparent; }
+.addressRow > button { border: 0; border-radius: 7px; background: #f96f22; color: #fff; font-weight: 800; }
+.icon { font-style: normal; }
+.heroFood { width: 390px; height: 390px; justify-self: end; border-radius: 50%; overflow: hidden; border: 15px solid #e6a80022; }
+.heroFood img { width: 100%; height: 100%; object-fit: cover; }
+.deals { max-width: 1132px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; padding: 0 24px; }
+.dealCard h3 { margin: 12px 0 4px; font-size: 15px; }
+.dealImage { height: 205px; position: relative; overflow: hidden; border-radius: 10px; }
+.dealImage img { width: 100%; height: 100%; object-fit: cover; }
+.discount { position: absolute; left: 0; bottom: 0; height: 52px; min-width: 70px; display: flex; align-items: center; gap: 4px; padding: 4px 10px; color: #fff; background: #f77a22; border-radius: 0 8px 0 0; }
+.discount b { font-size: 27px; }.discount small { line-height: 1; }
+.remaining { display: inline-block; margin-bottom: 15px; padding: 5px 9px; color: #f77a22; background: #fff1e7; border-radius: 4px; font-size: 12px; font-weight: 800; }
+.howSection { background: #fffaf0; margin-top: 18px; padding: 52px 24px 68px; text-align: center; }
+.howSection h2, .popularSection h2, .browseSection h2 { color: #f77a22; text-align: center; margin: 0 0 38px; }
+.howGrid { max-width: 980px; margin: auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 35px; }
+.howIcon { width: 75px; height: 75px; margin: auto; display: grid; place-items: center; color: #ffad1f; border-radius: 22px; background: #fff; box-shadow: 0 8px 24px #dba20012; }
+.howIcon .icon { font-size: 38px; }.howGrid h3 { font-size: 15px; margin: 18px 0 8px; }.howGrid p { color: #777; font-size: 12px; line-height: 1.5; }
+.popularSection { max-width: 1132px; margin: 55px auto; padding: 0 24px; }
+.popularSection h2, .browseSection h2 { color: #292929; }
+.popularGrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.popularCard img { width: 100%; height: 150px; object-fit: cover; border-radius: 9px; }.popularCard h3 { font-size: 14px; margin: 10px 0 4px; }.popularCard p { color: #f77a22; font-size: 11px; margin: 0 0 8px; }.popularCard div { display: grid; grid-template-columns: 1fr 1fr; align-items: center; }.popularCard div b { font-size: 13px; }.popularCard button { border: 0; background: #f77a22; color: #fff; border-radius: 5px; height: 32px; font-weight: 800; font-size: 11px; }
+.browseSection { max-width: 1132px; margin: 65px auto 50px; padding: 0 24px; }.categories { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }.categories button { border: 0; background: transparent; text-transform: capitalize; }.categories button span { width: 105px; height: 105px; margin: 0 auto 10px; display: grid; place-items: center; border-radius: 50%; background: #f4f4f4; font-size: 52px; }.categories button b { display: block; font-size: 13px; }
+.features { max-width: 860px; min-height: 120px; margin: 15px auto 60px; border-radius: 34px; background: #fff; box-shadow: 0 12px 40px #00000010; display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; }.features div { height: 70px; display: flex; align-items: center; justify-content: center; gap: 12px; color: #f77a22; border-right: 1px solid #eee; font-size: 17px; }.features div:last-child { border: 0; }.features .icon { width: 58px; height: 58px; display: grid; place-items: center; border-radius: 50%; background: #fff4df; font-size: 31px; }
+.promotions { max-width: 1132px; margin: 0 auto 80px; padding: 0 24px; display: grid; gap: 28px; }.promotionCard { min-height: 260px; display: grid; grid-template-columns: 42% 58%; background: #fff; border: 1px solid #eee; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px #0000000c; }.promotionCard > div { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 38px; }.promotionCard h2 { max-width: 300px; margin: 0 0 12px; }.promotionCard p { color: #777; font-size: 13px; line-height: 1.6; }.promotionCard button { width: 220px; height: 44px; margin-top: 20px; border: 0; border-radius: 6px; background: #ffad1f; color: #fff; font-weight: 800; text-transform: uppercase; }.promotionCard img { width: 100%; height: 100%; object-fit: cover; }.promotionCard.reverse { grid-template-columns: 58% 42%; }
+footer { background: #252525; color: #fff; padding: 55px 24px; }.footerGrid { max-width: 1132px; margin: auto; display: grid; grid-template-columns: repeat(3, 1fr) 1.7fr; gap: 35px; }.footerGrid h3 { font-size: 14px; margin: 0 0 16px; }.footerGrid a { display: block; color: #bdbdbd; font-size: 11px; margin: 8px 0; }.emailBox { display: grid; grid-template-columns: 1fr 100px; }.emailBox input { height: 40px; border: 0; border-radius: 5px 0 0 5px; padding: 0 12px; }.emailBox button { border: 0; border-radius: 0 5px 5px 0; background: #ffad1f; color: #fff; font-weight: 800; }
+@media (max-width: 900px) { .hero { grid-template-columns: 1fr 35%; }.heroFood { width: 280px; height: 280px; }.deals { grid-template-columns: repeat(2, 1fr); }.popularGrid { grid-template-columns: repeat(3, 1fr); }.categories { grid-template-columns: repeat(3, 1fr); }.footerGrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .header { padding: 0 12px; }.searchButton { display: none; }.hero { grid-template-columns: 1fr; padding: 35px 18px; }.heroFood { display: none; }.hero h1 { font-size: 42px; }.addressRow { grid-template-columns: 1fr; }.addressRow > button { height: 42px; }.deals { grid-template-columns: 1fr 1fr; gap: 10px; }.dealImage { height: 150px; }.howGrid { grid-template-columns: 1fr 1fr; }.popularGrid { grid-template-columns: 1fr 1fr; }.categories { grid-template-columns: repeat(3, 1fr); }.categories button span { width: 80px; height: 80px; font-size: 38px; }.features { margin-inline: 18px; min-height: 100px; }.features div { flex-direction: column; text-align: center; font-size: 12px; }.features .icon { width: 44px; height: 44px; }.promotionCard, .promotionCard.reverse { grid-template-columns: 1fr; }.promotionCard img { max-height: 220px; }.promotionCard > div { padding: 25px; }.footerGrid { grid-template-columns: 1fr 1fr; }.follow { grid-column: span 2; } }
